@@ -146,10 +146,22 @@ fieldset{
     background-color: var(--bg2-color);
 }
 
+.banner > a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
 
-a:hover{
+ul > a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+ul > a:hover{
     text-decoration: underline;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 button:hover{
