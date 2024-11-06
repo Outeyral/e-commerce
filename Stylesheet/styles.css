@@ -44,8 +44,6 @@ header{
 h1{
     color:#212529;
     font-size: var(--h1);
-    display: inline;
-    padding-bottom: 15px;
 }
 
 .banner{
@@ -78,6 +76,7 @@ button {
 #logo {
     background-color: var(--bg1-color);
     color: #6c757d;
+    padding-bottom: 40px;
 }
 
 #logo:hover{
@@ -97,16 +96,25 @@ button {
     height: 25px;
     text-align: center;
     color: var(--text-color);
+
 }
 
 ::placeholder {
     color: var(--text-color);
 }
 
+
 fieldset{
     border: none;
     text-align: right;
     padding-bottom: 15px;
+    color: var(--text-color);
+}
+
+select  {
+    background-color: #dee2e6;
+    border: transparent;
+    color: var(--text-color);
 }
 
 .gallery {
@@ -118,9 +126,10 @@ fieldset{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 15px;
-    color: #6c757d;
+    color: var(--bg1-color);
+    padding: 30px 25px;
     text-align: center;
-    font-weight: normal;
+    font-size: 40px;
 }
 
 .gallery .image-container{
@@ -152,7 +161,6 @@ fieldset{
 
 .banner input:hover{
     border-color: transparent;
-    background-color: var(--bg2-color);
 }
 
 .banner > a{
@@ -189,11 +197,8 @@ i:hover{
     margin: 0 auto;
     gap: 14px;
     border: none;
-    padding: 14px;
-}
-
-#logotipo{
-    padding-top: 20px;
+    padding-left: 14px;
+    padding-top: 60px;
 }
 
 .material-symbols-outlined{
@@ -209,7 +214,7 @@ footer{
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 15px;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 #location {
@@ -225,6 +230,8 @@ footer{
 #location p {
     color: var(--text-color);
     padding: 0 25px;
+    gap: 15px;
+    font-family: 'quicksand'
 }
 
 #location h3 {
@@ -241,6 +248,10 @@ footer{
     height: auto;
     padding: 0;
     margin: 0;
+}
+
+div > .space {
+    padding: 10px;
 }
 
 iframe{
@@ -265,6 +276,10 @@ iframe{
         color: var(--text-color);
         padding: 0 30px;
     }
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 25px;
+    }
 
 @media (min-width: 600px) {
     .logo{padding-top: 40px;}
@@ -277,16 +292,24 @@ iframe{
     .banner input{
         width: 400px;
     }
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 25px;
+    }
     #location p {
         color: var(--text-color);
         padding: 0 50px;
+    }
+    body{
+        width: 100%;
     }
 }
 
 @media (min-width: 788px) {
     .logo{padding-top: 40px;}
     .gallery .image-container .image {
-        width: 300px;
+        height: 250px;
+        width: 250px
     }
     .gallery .image-container .image img {
         object-fit: cover;
@@ -298,16 +321,24 @@ iframe{
         color: var(--text-color);
         padding: 0 70px;
     }
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 25px;
+    }
 }
 
 
 @media (min-width: 992px) {
     .logo{padding-top: 40px;}
     .gallery .image-container .image {
-        width: 300px;
+        height: 260px;
     }
     .gallery .image-container .image img {
         object-fit: cover;
+    }
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 25px;
     }
     .banner input{
         width: 550px;
@@ -317,10 +348,15 @@ iframe{
 @media (min-width: 1293px) {
     .logo{padding-top: 40px;}
     .gallery .image-container .image {
-        width: 320px;
+        height: 250px;
+        width: 270px;
     }
     .gallery .image-container .image img {
         object-fit: cover;
+    }
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 25px;
     }
     #location p {
         color: var(--text-color);
@@ -331,10 +367,15 @@ iframe{
 @media (min-width: 1492px) {
     .logo{padding-top: 40px;}
     .gallery .image-container .image {
-        width: 320px;
+        height: 300px;
+        width: 300px;
     }
     .gallery .image-container .image img {
         object-fit: cover;
+    }
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 20px;
     }
     #location p {
         color: var(--text-color);
@@ -345,10 +386,15 @@ iframe{
 @media (min-width: 1560px) {
     .logo{padding-top: 40px;}
     .gallery .image-container .image {
-        width: 30px;
+        width: 310px;
     }
     .gallery .image-container .image img {
         object-fit: cover;
+    }
+
+    .gallery .image-container{
+        gap: 25px;
+        padding-top: 25px;
     }
     #location p {
         color: var(--text-color);
