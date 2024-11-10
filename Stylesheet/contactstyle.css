@@ -5,34 +5,37 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("../Multimedia/back.jpg");
+    min-width: 300px;
+    background-image: url(/Multimedia/back.jpg);
+    width: 100%;
 }
 
-h1{
+h1 {
     font-size: 36px;
     text-align: center;
-    color:#161718;
+    color: #161718;
 }
 
-#wrapper{
+#wrapper {
     width: 420px;
     border: 1px solid gray;
-    padding: 30px 40px;
+    margin: 15px;
+    padding: 15px 35px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     background-color: transparent;
     backdrop-filter: blur(15px);
 }
 
-#wrapper .contact{
+#wrapper .contact {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 45px;
     margin: 30px 0;
     padding-bottom: 55px;
 }
@@ -53,7 +56,7 @@ h1{
     margin-bottom: 20px;
 }
 
-textarea{
+textarea {
     background: transparent;
     border: 2px solid gray;
     border-radius: 15px;
@@ -62,36 +65,34 @@ textarea{
     padding: 20px 45px 20px 20px;
 }
 
-
-
-#wrapper .btn:hover{
+#wrapper .btn:hover {
     background-color: #dee2e6;
     color: #161718;
     border: none;
 }
 
-#wrapper p a{
+#wrapper p a {
     text-decoration: none;
     color: black;
 }
 
-#wrapper p a:hover{
+#wrapper p a:hover {
     color: gray;
     text-decoration: underline;
 }
 
-#wrapper p a:active{
+#wrapper p a:active {
     color: black;
 }
 
-#wrapper .contact{
+#wrapper .contact {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.contact input::placeholder{
+.contact input::placeholder {
     color: #7e7e7e;
 }
 
@@ -104,4 +105,59 @@ textarea{
     border-radius: 40px;
     font-size: 16px;
     padding: 20px 45px 20px 20px;
+}
+
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 28px;
+    }
+    #wrapper {
+        width: 70%;
+        padding: 15px 20px;
+    }
+    #wrapper .btn {
+        font-size: 16px;
+        height: 40px;
+        margin-top: 50px;
+    }
+    .contact input, textarea {
+        font-size: 10px;
+    }
+    #wrapper .contact {
+        position: relative;
+        width: 100%;
+        height: 25px;
+        margin: 20px 0;
+        padding-bottom: 55px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 24px;
+    }
+    #wrapper {
+        width: 50%;
+    }
+    .contact input, textarea {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 20px;
+    }
+    #wrapper {
+        width: 50%;
+    }
+    .contact input, textarea {
+        font-size: 7px;
+        
+    }
+    .contact > label {
+        font-size: 12px
+    }
 }
